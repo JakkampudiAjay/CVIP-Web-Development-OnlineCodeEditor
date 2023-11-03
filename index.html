@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Online Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="first">
+        <h1>Output Enhanser</h1>
+    </div>
+    <div class="editor">
+        <div class="wrapper">
+            <div class="input">
+                <label>Html</label>
+                <textarea class="html" onkeyup="compileCode()" spellcheck="false"></textarea>
+            </div>
+            <div class="input">
+                <label>Css</label>
+                <textarea class="css" onkeyup="compileCode()" spellcheck="false"></textarea>
+            </div>
+            <div class="input">
+                <label>JavaScript</label>
+                <textarea class="js" onkeyup="compileCode()" spellcheck="false"></textarea>
+            </div>
+        </div>
+        <div class="result">
+            <label>Output</label>
+            <iframe class="display"></iframe>
+        </div>
+    </div>
+    <script src="main.js"></script>
+
+</body>
+</html>
